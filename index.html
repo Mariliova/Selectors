@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Types of selectors</h1>
+    </header>
+
+    <p id="color1">#id - #color1 - Selects the element with id="color1" and changes the background color. Selector
+        Specificity: 100.</p>
+    <p class="color2">.class - .color2 - Selects all elements with class="color2" and changes the background color.
+        Selector Specificity: 10.</p>
+    <p class="color3">element.class - p.color3 - Selects only "p" elements with class="color3" and changes the
+        background color. Selector Specificity: 11.</p>
+    <p>element - p - Selects all "p" elements and changes the background color. Selector Specificity: 1.</p>
+    <p data-type="primary">element[attribute] - p[data-type] - selects all "p" elements with attribute[data-type]
+        and changes the background color. Selector Specificity: 11.
+    </p>
+    <p class="color2 border"> This "p" element has two clases. Not only the color is changed but also the border
+        too. Selector Specificity: 10 each.</p>
+    <fieldset>
+        <div>
+            <p>element element - fieldset p - Selects all "p" elements inside
+                "fieldset" elements and changes the background color. Selector Specificity: 2.</p>
+            <p>This is a paragraph too but it is not a child of the fieldset, it is inside a div.</p>
+            <p>This is paragraph too.</p>
+        </div>
+        <p> element > element - fieldset > p - selects all "p" elements that are children of a
+            "fieldset" element and changes the background color. Selector Specificity: 2. It works because in ccs
+            rules it is declared lower.</p>
+        <p>This is paragraph too.</p>
+        <p>This is paragraph too.</p>
+    </fieldset>
+    <p>element+element fieldset + p Selects the first "p" element that are placed immediately after
+        "fieldset" elements and changes the background color. Selector Specificity: 2.</p>
+
+    <section>
+        <h2>Hello world</h2>
+        <h3>element,element,.. - h2,h3 - Selects all "h2","h3" elements and
+            changes the background color. Selector Specificity: 1.</h3>
+        <p>element1~element2 p ~ ul Selects every "ul" element that are preceded by a "p" element and changes the
+            background color. Selector Specificity: 2.</p>
+        <ul>
+            <li>Hello world</li>
+            <li>Hello world</li>
+            <li>Hello world</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

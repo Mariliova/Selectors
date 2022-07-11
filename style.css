@@ -1,0 +1,58 @@
+body {
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 50%;
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#color1 {
+    background-color: tomato;
+}
+
+.color2 {
+    background-color: orange;
+}
+
+p.color3 {
+    background-color: dodgerblue;
+}
+
+p {
+    background-color: mediumseagreen;
+}
+
+p[data-type] {
+    background-color: violet;
+}
+
+.border {
+    border: 5px dotted black;
+}
+
+fieldset p {
+    background-color: lightgray;
+}
+
+fieldset>p {
+    background-color: slateblue;
+}
+
+fieldset+p {
+    background-color: chocolate;
+}
+
+h2,
+h3 {
+    background-color: bisque;
+}
+
+p~ul {
+    background-color: aquamarine;
+}
+
+fieldset {
+    margin-top: 10px;
+}
